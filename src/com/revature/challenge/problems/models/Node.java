@@ -1,14 +1,16 @@
 package com.revature.challenge.problems.models;
 
 public class Node {
+    int num;
     Node left;
     Node right;
-    int num;
+
 
     public Node(int num) {
+        this.num = num;
         this.left = null;
         this.right = null;
-        this.num = num;
+
     }
 
     public Node getLeft() {
