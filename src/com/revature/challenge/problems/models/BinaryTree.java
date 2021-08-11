@@ -68,4 +68,19 @@ public class BinaryTree {
         }
     }
 
+    public void printTreeLevel(int level){
+        printTreeLevel(root, level);
+    }
+
+    private void printTreeLevel(Node node, int level){
+        if(node!=null){
+         if(level == 1){
+             System.out.println(node.toString());
+         }else if(level > 1){
+             printTreeLevel(node.left, level -1);
+             printTreeLevel(node.right, level -1);
+         }
+        }
+    }
+
 }
