@@ -14,9 +14,15 @@ public class MainBinaryTreeChallenge {
         for (int i = 0; i < N; i++) {
             binaryTree.add((int) (Math.random() * (max)) + min);
         }
+        System.out.println("*************************");
+        System.out.println("     InOrderTraversal    " );
+        System.out.println("*************************");
+        //binaryTree.printInOrderTraversal(binaryTree.getRoot());
+        System.out.println("*************************");
+        System.out.println(" Breath First Traversal " );
+        System.out.println("*************************");
+        binaryTree.printBreathFirstTraversal();
 
-        binaryTree.printInOrderTraversal(binaryTree.getRoot());
-        System.out.println("*********************");
     }
 
 }

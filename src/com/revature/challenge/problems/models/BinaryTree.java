@@ -1,7 +1,12 @@
 package com.revature.challenge.problems.models;
 
+import java.util.ArrayDeque;
+import java.util.Objects;
+import java.util.Optional;
+
 public class BinaryTree {
     Node root;
+    ArrayDeque<Node> queue = new ArrayDeque<Node>();
 
     public BinaryTree(){};
 
@@ -32,11 +37,35 @@ public class BinaryTree {
 
     }
 
-    public void printInOrderTraversal(Node root){
-        if(root!=null){
-            printInOrderTraversal(root.left);
-            System.out.println(root.toString() + " ");
-            printInOrderTraversal(root.right);
+//    public void printInOrderTraversal(Node root){
+//        if(root!=null){
+//            printInOrderTraversal(root.left);
+//            System.out.println(root.toString() + " ");
+//            printInOrderTraversal(root.right);
+//        }
+//    }
+
+    public void printBreathFirstTraversal(){
+        queue.add(root);
+        printBFS();
+    }
+
+    private void printBFS(){
+        Node tempNode = queue.pollFirst();
+        if(tempNode!=null){
+            printAndAddChildrenToQueue(tempNode);
+            printBFS();
         }
     }
+
+    private void printAndAddChildrenToQueue(Node node){
+        System.out.println(node.toString());
+        if(node.left!=null){
+            queue.add(node.left);
+        }
+        if(node.right!=null){
+            queue.add(node.right);
+        }
+    }
+
 }
