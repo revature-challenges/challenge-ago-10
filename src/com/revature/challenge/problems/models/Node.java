@@ -13,6 +13,13 @@ public class Node {
 
     }
 
+    @Override
+    public String toString() {
+        return "Node{" +
+                "num=" + num +
+                '}';
+    }
+
     public Node getLeft() {
         return left;
     }

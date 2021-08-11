@@ -3,6 +3,12 @@ package com.revature.challenge.problems.models;
 public class BinaryTree {
     Node root;
 
+    public BinaryTree(){};
+
+    public Node getRoot() {
+        return root;
+    }
+
     private Node addRecursive(Node current, int num){
         if(current==null){
             return new Node(num);
@@ -26,7 +32,11 @@ public class BinaryTree {
 
     }
 
-    public void printInOrderTraversal(){
-
+    public void printInOrderTraversal(Node root){
+        if(root!=null){
+            printInOrderTraversal(root.left);
+            System.out.println(root.toString() + " ");
+            printInOrderTraversal(root.right);
+        }
     }
 }
