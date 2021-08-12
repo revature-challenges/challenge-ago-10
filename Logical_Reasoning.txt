@@ -9,7 +9,11 @@ II. The third Saturday of the month was seventeenth.
 
 (a) if the data in statement I alone are sufficient to answer the question;
 
-(b) if the data in statement II alone are sufficient to answer the question;
+>>>(b) if the data in statement II alone are sufficient to answer the question;
+    This is my option due to every time that third saturday is 17 the 14 always be wednesday. For first statement
+    depends of the end of the month the date will change (However every time that last day of the month is
+    wednesday 30 or Feb 28 coincide with the Wednesday 14)
+
 
 (c) if the data either in I or II alone are sufficient to answer the question;
 
