@@ -33,10 +33,6 @@ public class BinaryTree {
      root = addRecursive(root, num);
     }
 
-    public void printAllNodesInLevel(int level){
-
-    }
-
 //    public void printInOrderTraversal(Node root){
 //        if(root!=null){
 //            printInOrderTraversal(root.left);
